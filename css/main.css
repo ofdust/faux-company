@@ -583,17 +583,42 @@ section figure {
   max-width: 700px;
   position: relative;
   display: inline-block;
+  margin: 0 auto;
 }
 section figure img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
-section .inactive {
-  display: none;
+section .clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
 }
-section .last-active {
-  display: none;
+section #thumbnails {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  cursor: pointer;
+}
+section .active {
+  opacity: 1;
+}
+section .inactive {
+  opacity: .7;
+}
+section .inactive:hover {
+  opacity: 1;
+}
+section .thumbnail {
+  width: 24%;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  margin-right: 1.3%;
+}
+section #thumbnails figure:nth-of-type(4n) {
+  margin-right: 0;
 }
 section .fa-chevron-circle-right, section .fa-chevron-circle-left {
   display: inline-block;
@@ -615,7 +640,8 @@ section .fa-chevron-circle-left {
 }
 section #gallery {
   margin: 0 auto;
-  display: inline-flex;
+  display: block;
+  text-align: center;
 }
 
 .fa-quote-left {
