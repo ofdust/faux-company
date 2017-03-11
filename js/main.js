@@ -23,3 +23,13 @@ function changeImage() {
 	var arrowright = document.getElementById("right");
 	arrowright.addEventListener("click", changeImage, false);
 //});
+
+checkScroll();
+
+$(window).scroll(checkScroll);
+function checkScroll() {
+	var top = $(window).scrollTop();
+	if(top > 100) {
+		$("nav").css("backgroundColor", "#f0f0f0", 500);
+	}
+}
