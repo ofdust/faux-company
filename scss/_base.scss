@@ -79,12 +79,47 @@ nav {
 section {
 	width: 70%;
 	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
 	h2 {
 		font-family: 'PT Sans Caption', sans-serif;
 		font-size: 2em;
+		border-bottom: 1px solid black;
 	}
 	p {
 		font-family: 'Merriweather', serif;
+	}
+	figure {
+		max-width: 600px;
+		position: relative;
+		display: inline-block;
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.inactive {
+		display: none;
+	}
+	.last-active {
+		display: none;
+	}
+
+	.fa-chevron-circle-right, .fa-chevron-circle-left {
+		display: inline-block;
+		font-size: 3em;
+		padding: 40px;
+		vertical-align: center;
+		margin: auto 0;
+		&:hover {
+			opacity: .7;
+			cursor: pointer;
+		}
+	}
+	#gallery {
+		margin: 0 auto;
+		display: inline-flex;
 	}
 }
 
