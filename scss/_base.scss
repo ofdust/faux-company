@@ -18,15 +18,17 @@ header {
 		padding-top: 110px;
 		font-size: 3em;
 		margin-left: 100px;
+		font-family: 'PT Sans Caption', sans-serif;
 	}//h1
 	p {
+		font-family: 'Merriweather', serif;
 		margin-top:-35px;
 		margin-left: 100px;
 		padding-left: 5px;
 		padding: 10px;
-		width: 400px;
+		width: 450px;
 		border-radius: 5px;
-		background: rgba(192, 192, 192, .5);
+		background: rgba(192, 192, 192, .6);
 	}//p
 }
 
@@ -46,6 +48,7 @@ nav {
 				text-decoration: none;
 				color:black;
 				font-size: 1.3em;
+				font-family: 'PT Sans Caption', sans-serif;
 				span {
 					position: absolute;
 					top:-9999em;
@@ -76,6 +79,13 @@ nav {
 section {
 	width: 70%;
 	margin: 0 auto;
+	h2 {
+		font-family: 'PT Sans Caption', sans-serif;
+		font-size: 2em;
+	}
+	p {
+		font-family: 'Merriweather', serif;
+	}
 }
 
 //REVIEWS
@@ -93,6 +103,7 @@ cite {
 	padding-right: 50px;
 	font-size: 1.5em;
 	margin-top: -10px;
+	margin-bottom: 50px;
 	}
 }
 
