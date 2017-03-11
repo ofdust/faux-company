@@ -15,17 +15,19 @@ header {
 	position: relative;
 	top: 0;
 	h1 {
-		padding-top: 120px;
+		padding-top: 110px;
 		font-size: 3em;
-	}
+		margin-left: 100px;
+	}//h1
 	p {
-		margin-top:-25px;
+		margin-top:-35px;
+		margin-left: 100px;
 		padding-left: 5px;
 		padding: 10px;
 		width: 400px;
 		border-radius: 5px;
 		background: rgba(192, 192, 192, .5);
-	}
+	}//p
 }
 
 nav {
@@ -67,6 +69,33 @@ nav {
 		}//li
 		.link {
 			margin-top:20px;
-		}
+		}//.link
 	}//ul
+}
+
+section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+//REVIEWS
+.fa-quote-left {
+	font-size: 1.5em;
+}
+blockquote {
+	margin-top: -35px;
+}
+cite {
+	p {
+	text-align: right;
+	width: 100%;
+	right:0px;
+	padding-right: 50px;
+	font-size: 1.5em;
+	margin-top: -10px;
+	}
+}
+
+footer {
+	text-align: center;
 }
