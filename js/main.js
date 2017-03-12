@@ -4,6 +4,7 @@
 //});
 
 function changeImage(picture) {
+	$(".active-img").css("opacity", "0");
 	if (picture == buckingham) {
 		$(".active-img").attr("src", "img/buckingham.jpg");
 		$(".active-caption").html("<p>Buckingham Palace</p>");
@@ -14,7 +15,9 @@ function changeImage(picture) {
 	}
 	if (picture == tower) {
 		$(".active-img").attr("src", "img/tower.jpg");
+
 		$(".active-caption").html("<p>The Tower of London</p>");
+
 		$(".thumbnail").each(function() {
 		 	$( this ).addClass("inactive");
 		});
@@ -36,6 +39,7 @@ function changeImage(picture) {
 		})
 		$("#bridge").removeClass("inactive");
 	}
+	$(".active-img").animate({opacity: "1"}, 1000);
 }
 
 $(document).ready(function() {
