@@ -4,7 +4,7 @@
 //});
 
 function changeImage(picture) {
-	$(".active-img").css("opacity", "0");
+	$(".active").css("opacity", "0");
 	if (picture == buckingham) {
 		$(".active-img").attr("src", "img/buckingham.jpg");
 		$(".active-caption").html("<p>Buckingham Palace</p>");
@@ -39,7 +39,7 @@ function changeImage(picture) {
 		})
 		$("#bridge").removeClass("inactive");
 	}
-	$(".active-img").animate({opacity: "1"}, 1000);
+	$(".active").animate({opacity: "1"}, 1000);
 }
 
 $(document).ready(function() {
