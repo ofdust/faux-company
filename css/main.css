@@ -580,15 +580,12 @@ section p {
   line-height: 1.7em;
 }
 section figure {
-  max-width: 700px;
   position: relative;
   display: inline-block;
-  margin: 0 auto;
 }
 section figure img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
 }
 section .clearfix:after {
   display: table;
@@ -596,13 +593,20 @@ section .clearfix:after {
   clear: both;
 }
 section #thumbnails {
-  display: block;
-  margin: 0 auto;
-  max-width: 700px;
+  display: inline-block;
+  width: 19%;
   cursor: pointer;
+  float: right;
+}
+section #thumbnails figure {
+  display: block;
 }
 section .active {
   opacity: 1;
+  float: left;
+  width: 76%;
+  padding: 0px;
+  margin-top: 0px;
 }
 section .inactive {
   opacity: .7;
@@ -611,37 +615,21 @@ section .inactive:hover {
   opacity: 1;
 }
 section .thumbnail {
-  width: 24%;
+  width: 100%;
   padding: 0px;
   margin: 0px;
-  float: left;
-  margin-right: 1.3%;
 }
-section #thumbnails figure:nth-of-type(4n) {
-  margin-right: 0;
-}
-section .fa-chevron-circle-right, section .fa-chevron-circle-left {
-  display: inline-block;
-  font-size: 3em;
-  padding: 20px;
-  vertical-align: center;
-  margin: auto 0;
-}
-section .fa-chevron-circle-right:hover, section .fa-chevron-circle-left:hover {
-  opacity: .7;
-  cursor: pointer;
-}
-section .fa-chevron-circle-right {
-  text-align: right;
-  right: 0px;
-}
-section .fa-chevron-circle-left {
-  text-align: left;
+section .thumbnail figcaption {
+  display: none;
 }
 section #gallery {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
+  display: float;
+  border: 1px solid black;
+  text-align: left;
+  padding: 0px;
+}
+section #gallery figure {
+  margin-left: 0px;
 }
 
 .fa-quote-left {
