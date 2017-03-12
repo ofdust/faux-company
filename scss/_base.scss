@@ -52,6 +52,9 @@ nav {
 				color:black;
 				font-size: 1.3em;
 				font-family: 'PT Sans Caption', sans-serif;
+				&:hover {
+					opacity: .6;
+				}
 				span {
 					position: absolute;
 					top:-9999em;

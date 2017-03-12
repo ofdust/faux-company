@@ -542,6 +542,9 @@ nav ul li a {
   font-size: 1.3em;
   font-family: 'PT Sans Caption', sans-serif;
 }
+nav ul li a:hover {
+  opacity: .6;
+}
 nav ul li a span {
   position: absolute;
   top: -9999em;
