@@ -17,6 +17,10 @@
 
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnO4K61ENNnRKmlHtBGECNeU7altRThjI&callback=initMap">
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -59,7 +63,7 @@
                 <div id="thumbnails" >
                     <figure id="bridge" class ="thumbnail">
                         <img src="img/bridge.jpg" alt="london bridge on an overcast day">
-                        <figcaption><p>London Bridge<p></figcaption>
+                        <figcaption><p>Tower Bridge<p></figcaption>
                     </figure>
                     <figure id="buckingham"class="inactive thumbnail">
                         <img src="img/buckingham.jpg" alt="The front of buckingham palace">
@@ -79,6 +83,7 @@
 
         <section>
             <h2>Map</h2>
+            <div id="map"></div>
         </section>
 
         <section>

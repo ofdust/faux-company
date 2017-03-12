@@ -632,6 +632,11 @@ section #gallery figure {
   margin-left: 0px;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .fa-quote-left {
   font-size: 1.5em;
 }

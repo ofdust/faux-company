@@ -33,7 +33,7 @@ function changeImage(picture) {
 	}
 	if (picture == bridge) {
 		$(".active-img").attr("src", "img/bridge.jpg");
-		$(".active-caption").html("<p>London Bridge</p>");
+		$(".active-caption").html("<p>Tower Bridge</p>");
 		$(".thumbnail").each(function() {
 		 	$( this ).addClass("inactive");
 		})
@@ -116,3 +116,41 @@ function checkScroll() {
 		$("nav").css("backgroundColor", headerColor + "1", 500);
 	}
 }
+
+
+function initMap() {
+		var twr = {lat:51.508293, lng: -0.075992};
+        var centr = {lat: 51.510042, lng: -0.128070};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: centr
+        });
+        var marker = new google.maps.Marker({
+          position: twr,
+          map: map
+        });
+        var bigben = new google.maps.Marker({
+        	position: {lat:51.500896, lng:-0.124615},
+        	map: map
+        });
+        var buck = new google.maps.Marker({
+        	position: {lat:51.501564, lng:-0.141954},
+        	map: map
+        });
+        var portobello = new google.maps.Marker({
+        	position: {lat:51.516072, lng:-0.205036},
+        	map: map
+        });
+        var twrbridge = new google.maps.Marker({
+        	position: {lat:51.505790, lng:-0.075389},
+        	map: map
+        });
+        var park = new google.maps.Marker({
+        	position: {lat:51.507008, lng:-0.165934},
+        	map: map
+        });
+        var tate = new google.maps.Marker({
+        	position: {lat:51.507762, lng:-0.099367},
+        	map: map
+        });
+      }
