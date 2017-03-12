@@ -1,17 +1,37 @@
-var headerColor = "rgba(240, 240, 240,";
+//$(document).ready(function() {
 
-var i = 0;
-var images = ["img/bridge.jpg", "img/buckingham.jpg", "img/tower.jpg"];
-var currentImage = images[0];
 
-//function changeImage() {
-
-//$(document).ready(function() {	
-	// var arrowleft = document.getElementById("left");
-	// arrowleft.addEventListener("click", changeImage, false);
-	// var arrowright = document.getElementById("right");
-	// arrowright.addEventListener("click", changeImage, false);
 //});
+
+function changeImage(picture) {
+	if (picture == buckingham) {
+		$(".active-img").attr("src", "img/buckingham.jpg");
+		$(".active-caption").html("<p>Buckingham Palace</p>");
+	}
+	if (picture == tower) {
+		$(".active-img").attr("src", "img/tower.jpg");
+		$(".active-caption").html("<p>The Tower of London</p>");
+	}
+	if (picture == market) {
+		$(".active-img").attr("src", "img/market.jpg");
+		$(".active-caption").html("<p>The Portobello Market</p>");
+	}
+	if (picture == bridge) {
+		$(".active-img").attr("src", "img/bridge.jpg");
+		$(".active-caption").html("<p>London Bridge</p>");
+	}
+}
+
+$(document).ready(function() {
+	$("#bridge").click(function(){changeImage(bridge)});
+	$("#buckingham").click(function(){changeImage(buckingham)});
+	$("#tower").click(function(){changeImage(tower)});
+	$("#market").click(function(){changeImage(market)});
+});
+
+
+
+var headerColor = "rgba(240, 240, 240,";
 
 checkScroll();
 

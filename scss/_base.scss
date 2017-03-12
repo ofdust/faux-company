@@ -87,39 +87,35 @@ section {
 		font-family: 'PT Sans Caption', sans-serif;
 		font-size: 2em;
 		border-bottom: 1px solid black;
-	}
+	}//h2
 	p {
 		font-family: 'Merriweather', serif;
 		line-height: 1.7em;
-	}
+	}//p
 	figure {
 		
 		position: relative;
 		display: inline-block;
-		//margin: 0 auto;
 		img {
 			max-width: 100%;
 			display: block;
-			//margin: 0 auto;
-		}
-	}
+		}//img
+	}//figure
 
 	.clearfix:after {
 		display: table;
 		content: " ";
 		clear: both;
-	}
+	}//.clearfix
 
 	#thumbnails {
 		display: inline-block;
-		//margin: 0 auto;
-		//max-width: 700px;
 		width:19%;
 		cursor: pointer;
 		float:right;
 		figure {
 			display: block;
-		}
+		}//figure
 
 	}
 	.active {
@@ -128,23 +124,22 @@ section {
 		width: 76%;
 		padding: 0px;
 		margin-top:0px;
-	}
+		margin-right:0px;
+	}//.active
 	.inactive {
 		opacity: .7;
 		&:hover {
 			opacity: 1;
-		}
-	}
+		}//hover
+	}//.inactive
 	.thumbnail {
 		width:100%;
 		padding:0px;
 		margin:0px;
-		//float: left;
-		//margin-right: 1.3%;
 		figcaption {
 			display: none;
-		}
-	}
+		}//figcaption
+	}//.thumbnail
 	// .fa-chevron-circle-right, .fa-chevron-circle-left {
 	// 	display: inline-block;
 	// 	font-size: 3em;
@@ -166,7 +161,7 @@ section {
 	#gallery {
 		//margin: 0 auto;
 		display: float;
-		border: 1px solid black;
+		//border: 1px solid black;
 		text-align: left;
 		padding: 0px;
 		figure {

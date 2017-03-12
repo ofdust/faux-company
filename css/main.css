@@ -607,6 +607,7 @@ section .active {
   width: 76%;
   padding: 0px;
   margin-top: 0px;
+  margin-right: 0px;
 }
 section .inactive {
   opacity: .7;
@@ -624,7 +625,6 @@ section .thumbnail figcaption {
 }
 section #gallery {
   display: float;
-  border: 1px solid black;
   text-align: left;
   padding: 0px;
 }
