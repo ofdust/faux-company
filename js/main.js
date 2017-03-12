@@ -7,18 +7,34 @@ function changeImage(picture) {
 	if (picture == buckingham) {
 		$(".active-img").attr("src", "img/buckingham.jpg");
 		$(".active-caption").html("<p>Buckingham Palace</p>");
+		$(".thumbnail").each(function() {
+		 	$( this ).addClass("inactive");
+		})
+		$("#buckingham").removeClass("inactive");
 	}
 	if (picture == tower) {
 		$(".active-img").attr("src", "img/tower.jpg");
 		$(".active-caption").html("<p>The Tower of London</p>");
+		$(".thumbnail").each(function() {
+		 	$( this ).addClass("inactive");
+		});
+		$("#tower").removeClass("inactive");
 	}
 	if (picture == market) {
 		$(".active-img").attr("src", "img/market.jpg");
 		$(".active-caption").html("<p>The Portobello Market</p>");
+		$(".thumbnail").each(function() {
+		 	$( this ).addClass("inactive");
+		});
+		$("#market").removeClass("inactive");
 	}
 	if (picture == bridge) {
 		$(".active-img").attr("src", "img/bridge.jpg");
 		$(".active-caption").html("<p>London Bridge</p>");
+		$(".thumbnail").each(function() {
+		 	$( this ).addClass("inactive");
+		})
+		$("#bridge").removeClass("inactive");
 	}
 }
 
