@@ -477,16 +477,24 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-logo {
-  background-image: url('../img/icon-s8374f72a5a.png');
+.icon-sprite, .icon-facebook, .icon-logo, .icon-twitter {
+  background-image: url('../img/icon-sc2fe18caaa.png');
   background-repeat: no-repeat;
 }
 
+.icon-facebook {
+  background-position: 0 0;
+}
+
 .icon-logo {
-  background-position: 0 -100px;
+  background-position: 0 -200px;
 }
 .icon-logo:hover, .icon-logo.logo-hover {
-  background-position: 0 0;
+  background-position: 0 -100px;
+}
+
+.icon-twitter {
+  background-position: 0 -300px;
 }
 
 *, html, body {
@@ -658,10 +666,76 @@ cite p {
   margin-bottom: 50px;
 }
 
-footer {
+#button {
+  width: 120px;
   text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #d2d2d2;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#button:hover {
+  opacity: .6px;
+  border: 1px solid gray;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/*media query block medium tablet*/
+@media only screen and (min-width: 594px) and (max-width: 768px) {
+  header {
+    padding-left: 0px;
+  }
+
+  section {
+    width: 90%;
+  }
+}
+/*end medium block*/
+/*media query block small mobile*/
+@media only screen and (max-width: 593px) {
+  header {
+    padding-left: 0px;
+    height: 400px;
+  }
+  header h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  header p {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 0px;
+    position: relative;
+  }
+  nav ul li {
+    display: block;
+    float: none;
+    margin-left: -20px;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  section {
+    width: 99%;
+    padding: 5px;
+  }
+}
+/*end small block*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
