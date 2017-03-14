@@ -49,13 +49,19 @@ $(document).ready(function() {
 
 var headerColor = "rgba(240, 240, 240,";
 
+// media query event handler
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 594px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
 
-var mq = window.matchMedia( "(min-width: 593px)" );
-if (mq.matches) {
-	checkScroll();
-
-	$(window).scroll(checkScroll);
+// media query change
+function WidthChange(mq) {
+  if (mq.matches) {
+    $(window).scroll(checkScroll);
 	function checkScroll() {
+		checkScroll();
 		var top = $(window).scrollTop();
 		if(top > 0) {
 			$("nav").css("backgroundColor", headerColor + "0)", 500);
@@ -116,8 +122,10 @@ if (mq.matches) {
 		}
 	}
 }
-else {
-	$("nav").css("backgroundColor", "rgba(240,240,240,1)");
+	else {
+	    $("nav").css("backgroundColor", "rgba(240,240,240,1)");
+	}
+
 }
 
 
