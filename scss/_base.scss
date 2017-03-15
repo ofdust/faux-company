@@ -19,6 +19,7 @@ header {
 		padding-top: 110px;
 		font-size: 3em;
 		margin-left: 100px;
+		color: $h1-color;
 		font-family: 'PT Sans Caption', sans-serif;
 	}//h1
 	p {
@@ -29,8 +30,28 @@ header {
 		padding: 10px;
 		width: 450px;
 		border-radius: 5px;
-		background: rgba(192, 192, 192, .6);
+		background: $header-p-bg;
 	}//p
+}
+#social-media {
+li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	a {
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		zoom:0.6;
+		-moz-transform:scale(0.6);
+		-moz-transform-origin: 0 0;
+		span {
+			position: absolute;
+			top: -9999em;
+			left: -9999em;
+		}//span
+	}// end a
+}//end li
 }
 
 nav {
@@ -54,7 +75,7 @@ nav {
 				font-size: 1.3em;
 				font-family: 'PT Sans Caption', sans-serif;
 				&:hover {
-					opacity: .6;
+					color: $gold;
 				}
 				span {
 					position: absolute;
@@ -90,7 +111,8 @@ section {
 	h2 {
 		font-family: 'PT Sans Caption', sans-serif;
 		font-size: 2em;
-		border-bottom: 1px solid black;
+		color: $section-header-color;
+		border-bottom: 1px solid $section-header-color;
 	}//h2
 	p {
 		font-family: 'Merriweather', serif;
@@ -168,13 +190,14 @@ blockquote {
 }
 cite {
 	p {
-	text-align: right;
-	width: 100%;
-	right:0px;
-	padding-right: 50px;
-	font-size: 1.5em;
-	margin-top: -10px;
-	margin-bottom: 50px;
+		text-align: right;
+		width: 100%;
+		right:0px;
+		padding-right: 50px;
+		font-size: 1.5em;
+		margin-top: -10px;
+		margin-bottom: 50px;
+		color: $gold;
 	}
 }
 
@@ -184,21 +207,19 @@ cite {
 	text-align: center;
 	padding:10px;
 	margin: 0 auto;
-	background-color: rgba(210, 210, 210, 1);
-	border: 1px solid rgba(210, 210, 210, 1);
+	background-color: $button-color;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-bottom: 20px;
 	&:hover {
-		opacity: .6px;
-		border:1px solid gray;
+		color: $gold;
 	}
 }
 
 footer {
 	text-align: center;
 	padding:20px;
-	background-color: rgba(240, 240, 240, 1);
+	background-color: $footer-color;
 }
 
 

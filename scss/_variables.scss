@@ -1,1 +1,16 @@
-$header-color: #000000;
+//colors
+$gold: #bdaa4a;
+$grey: rgba(192, 192, 192, .6);
+$warmgrey:rgba(240, 240, 240, 1);
+$darkgrey:rgba(210, 210, 210, 1);
+$black: #000000;
+
+//backgrounds
+$header-color-bg: $warmgrey;
+$header-p-bg: $grey;
+
+//text colors
+$footer-color: $warmgrey;
+$button-color: $darkgrey;
+$h1-color: $black;
+$section-header-color: $black;

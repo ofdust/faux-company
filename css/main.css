@@ -516,6 +516,7 @@ header h1 {
   padding-top: 110px;
   font-size: 3em;
   margin-left: 100px;
+  color: #000000;
   font-family: 'PT Sans Caption', sans-serif;
 }
 header p {
@@ -527,6 +528,25 @@ header p {
   width: 450px;
   border-radius: 5px;
   background: rgba(192, 192, 192, 0.6);
+}
+
+#social-media li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+#social-media li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  zoom: 0.6;
+  -moz-transform: scale(0.6);
+  -moz-transform-origin: 0 0;
+}
+#social-media li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
 }
 
 nav {
@@ -552,7 +572,7 @@ nav ul li a {
   font-family: 'PT Sans Caption', sans-serif;
 }
 nav ul li a:hover {
-  opacity: .6;
+  color: #bdaa4a;
 }
 nav ul li a span {
   position: absolute;
@@ -585,7 +605,8 @@ section {
 section h2 {
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 2em;
-  border-bottom: 1px solid black;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 section p {
   font-family: 'Merriweather', serif;
@@ -665,6 +686,7 @@ cite p {
   font-size: 1.5em;
   margin-top: -10px;
   margin-bottom: 50px;
+  color: #bdaa4a;
 }
 
 #button {
@@ -673,14 +695,12 @@ cite p {
   padding: 10px;
   margin: 0 auto;
   background-color: #d2d2d2;
-  border: 1px solid #d2d2d2;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
 }
 #button:hover {
-  opacity: .6px;
-  border: 1px solid gray;
+  color: #bdaa4a;
 }
 
 footer {
