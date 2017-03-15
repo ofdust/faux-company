@@ -477,24 +477,44 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-facebook, .icon-logo, .icon-twitter {
-  background-image: url('../img/icon-sc2fe18caaa.png');
+.icon-sprite, .icon-facebook, .icon-instagram, .icon-logo, .icon-tumblr, .icon-twitter {
+  background-image: url('../img/icon-s1ccb718d4e.png');
   background-repeat: no-repeat;
 }
 
 .icon-facebook {
+  background-position: 0 -100px;
+}
+.icon-facebook:hover, .icon-facebook.facebook-hover {
   background-position: 0 0;
 }
 
-.icon-logo {
+.icon-instagram {
+  background-position: 0 -300px;
+}
+.icon-instagram:hover, .icon-instagram.instagram-hover {
   background-position: 0 -200px;
 }
+
+.icon-logo {
+  background-position: 0 -500px;
+}
 .icon-logo:hover, .icon-logo.logo-hover {
-  background-position: 0 -100px;
+  background-position: 0 -400px;
+}
+
+.icon-tumblr {
+  background-position: 0 -700px;
+}
+.icon-tumblr:hover, .icon-tumblr.tumblr-hover {
+  background-position: 0 -600px;
 }
 
 .icon-twitter {
-  background-position: 0 -300px;
+  background-position: 0 -900px;
+}
+.icon-twitter:hover, .icon-twitter.twitter-hover {
+  background-position: 0 -800px;
 }
 
 *, html, body {
